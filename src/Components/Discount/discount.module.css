@@ -10,8 +10,7 @@
   margin-bottom: 210px;
 }
 .button1 {
-  /* width: 218px;
-  height: 58px; */
+  font-family: Montserrat;
   width: clamp(150px, 40vw, 218px);
   height: clamp(40px, 10vh, 58px);
   border-radius: var(--radius-small, 6px);
@@ -24,10 +23,11 @@
   line-height: 130%;
 }
 h1 {
+  font-family: Montserrat;
   font-size: clamp(20px, 5vw, 96px);
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
   color: #ffffff;
-  width: 94%;
+  width: 74%;
 }

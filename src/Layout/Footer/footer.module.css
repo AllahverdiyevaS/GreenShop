@@ -1,60 +1,3 @@
-/* .footer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  height: 948px;
-  padding: 80px, 40px;
-  box-sizing: border-box;
-}
-.fourContainer {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-}
-.right {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  justify-content: center;
-}
-.left {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  justify-content: center;
-}
-.right > div:first-of-type {
-  height: 150px;
-  width: 548px;
-  padding: 2rem;
-  border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #f1f3f4);
-}
-.left > div:first-of-type {
-  width: 780px;
-  height: 150px;
-  padding: 2rem;
-  border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #f1f3f4);
-}
-
-.left > div:last-of-type {
-  width: 780px;
-  height: 194px;
-  padding: 2rem;
-  border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #f1f3f4);
-}
-.right > div:last-of-type {
-  height: 194px;
-  width: 548px;
-  padding: 2rem;
-  border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #f1f3f4);
-} */
-
 .map img {
   border-radius: var(--radius-big, 12px);
   background: var(--light-grey, #f1f3f4);
@@ -81,14 +24,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
-  /* gap: 32px;
-  grid-template-rows: 150px 194 350px;
-  grid-template-columns: 780px 548px; */
   gap: 2vw;
-  /* grid-template-rows: 10vw 13vw 20vw;
-  grid-template-columns: 60vw 40vw; */
+
   grid-template-columns: 60% 40%;
-  /* grid-template-rows: 10% 13% 20%; */
+
   grid-template-rows: 150px 194 350px;
 }
 
@@ -100,7 +39,7 @@
   background: var(--light-grey, #f1f3f4);
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  /* gap: 1rem; */
   padding: 2rem;
 }
 .grid > div:last-child {
@@ -143,13 +82,19 @@ footer p {
   margin-bottom: clamp(20px, 3vw, 40px);
 }
 @media (max-width: 768px) {
-  .grid > div:not(:nth-child(5)) {
+  .grid > div {
     gap: 10px;
+  }
+  .grid > div p:last-child {
+    height: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .grid > div:not(:nth-child(5)) {
+  .grid > div {
     gap: 5px;
+  }
+  .grid > div p:last-child {
+    height: 5px;
   }
 }

@@ -20,7 +20,7 @@
 }
 h2 {
   text-align: center;
-
+  font-family: Montserrat;
   font-size: clamp(30px, 5vw, 64px);
   font-weight: 700;
   line-height: 70px;
@@ -56,23 +56,38 @@ input {
   border-radius: var(--radius-small, 6px);
   border: 1px solid #fff;
   background-color: transparent;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 500;
   line-height: 26px;
   color: #ffffff;
+  font-family: Montserrat;
 }
 .button2 {
   /* width: 415px;
   height: 58px; */
+  font-family: Montserrat;
   width: clamp(200px, 30vw, 415px);
   height: clamp(40px, 10vh, 58px);
-  /* width: min(90vw, 516px); */
   border-radius: var(--radius-small, 6px);
   background-color: #fff;
   border: none;
   color: #282828;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 600;
   line-height: 26px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .button2 {
+    width: clamp(150px, 5vw, 200px);
+    height: clamp(30px, 8vh, 48px);
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgContainer {
+    align-self: center;
+    margin-top: 0;
+  }
 }
