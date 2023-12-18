@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 1.8rem;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--txt-black, #282828);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.logo {
+  width: 4.3rem;
+  height: 70px;
+  flex-shrink: 0;
+}
+.bag {
+  width: 3rem;
+  height: 48px;
+  flex-shrink: 0;
+}
