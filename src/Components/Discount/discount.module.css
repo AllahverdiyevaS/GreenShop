@@ -31,3 +31,8 @@ h1 {
   color: #ffffff;
   width: 74%;
 }
+@media screen and (max-width: 768px) {
+  .mainContainer {
+    padding-left: 10px;
+  }
+}

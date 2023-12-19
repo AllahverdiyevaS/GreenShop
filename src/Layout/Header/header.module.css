@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 .nav a {
@@ -28,4 +28,10 @@
   width: 3rem;
   height: 48px;
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0 0.5rem;
+  }
 }
