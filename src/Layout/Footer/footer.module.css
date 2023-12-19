@@ -28,7 +28,7 @@
 
   grid-template-columns: 60% 40%;
 
-  grid-template-rows: 150px 194 350px;
+  /* grid-template-rows: 150px 194 350px; */
 }
 
 .grid > div:nth-child(5) {
@@ -53,7 +53,8 @@
   letter-spacing: 0em;
   text-align: left;
   /* width: 67px; */
-  height: 26px;
+  /* height: 26px; */
+  height: clamp(16px, 8vh, 26px);
   color: #8b8b8b;
   white-space: nowrap;
   margin-bottom: clamp(10px, 2vw, 16px);
@@ -67,10 +68,11 @@
   text-align: left;
 }
 .grid > div:not(:nth-child(3)) p:last-child {
-  height: clamp(22px, 5vh, 44px);
+  height: clamp(22px, 30vh, 44px);
 }
 .grid > div:nth-child(3) p:last-child {
-  height: clamp(44px, 10vh, 88px);
+  height: clamp(44px, 100vh, 88px);
+  /* max-height: 100%; */
 }
 footer p {
   font-family: Montserrat;
