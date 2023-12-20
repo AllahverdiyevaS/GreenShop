@@ -1,8 +1,9 @@
 import React from "react";
 import classes from "./footer.module.css";
-import map from "../../img/map.svg";
+
 import inst from "../../img/inst.svg";
 import whatsapp from "../../img/ic-whatsapp.svg";
+import Map from "./Map";
 
 const Footer = () => {
   return (
@@ -30,7 +31,7 @@ const Footer = () => {
           <p>24 hours a day</p>
         </div>
         <div className={classes.map}>
-          <img src={map} alt="" />
+          <Map />
         </div>
         <div></div>
       </div>

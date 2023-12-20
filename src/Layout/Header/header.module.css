@@ -34,4 +34,7 @@
   header {
     padding: 0 0.5rem;
   }
+  .nav {
+    display: none;
+  }
 }

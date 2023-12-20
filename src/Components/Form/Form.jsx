@@ -8,7 +8,7 @@ const Form = () => {
       <h2>5% off on the first order</h2>
       <div className={classes.formImg}>
         <div className={classes.imgContainer}>
-          <img className={classes.img} src={form} alt="" />
+          <img className={classes.img} src={form} alt="imgForForm" />
         </div>
         <form className={classes.form}>
           <input type="text" id="name" placeholder="Name"></input>
