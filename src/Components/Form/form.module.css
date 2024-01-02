@@ -9,7 +9,7 @@
   border-radius: var(--radius-big, 12px);
   background: linear-gradient(261deg, #0b710b 32.63%, #393 98.96%);
   gap: 1.5rem;
-  margin: 80px 32px;
+  margin: 80px 2.5rem;
 }
 .formImg {
   display: flex;
@@ -38,6 +38,7 @@ h2 {
 .img {
   width: 100%;
   height: auto;
+  border: none;
 }
 
 form {

@@ -1,0 +1,32 @@
+.productContainer {
+  display: flex;
+}
+.priceContainers {
+  display: flex;
+  position: relative;
+}
+
+.discountOverlay {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-radius: var(--radius-small, 6px);
+  background: var(--green, #393);
+  padding: 4px 8px;
+}
+
+.discountText {
+  color: var(--txt-white, #fff);
+  font-family: Montserrat;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.6px;
+}
+.descriptionConatiner {
+  display: flex;
+  flex-direction: column;
+}
+.img {
+  width: 200px;
+}

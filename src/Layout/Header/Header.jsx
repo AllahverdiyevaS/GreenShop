@@ -2,8 +2,7 @@ import React from "react";
 import logo from "../../img/logoGreen.svg";
 import icon from "../../img/icon.svg";
 import classes from "./header.module.css";
-
-const Header = () => {
+const Header = ({ handleCategoriesClick, handleMainPageClick }) => {
   return (
     <header className={classes.header}>
       <div>
@@ -11,8 +10,12 @@ const Header = () => {
       </div>
 
       <nav className={classes.nav}>
-        <a href="#">Main Page</a>
-        <a href="#">Categories</a>
+        <a href="#" onClick={handleMainPageClick}>
+          Main Page
+        </a>
+        <a href="#" onClick={handleCategoriesClick}>
+          Categories
+        </a>
         <a href="#">All products</a>
         <a href="#">All sales</a>
       </nav>
