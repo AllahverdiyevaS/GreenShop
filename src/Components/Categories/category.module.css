@@ -63,5 +63,6 @@ h2 {
 @media screen and (max-width: 768px) {
   .categoriesWrapper {
     flex-wrap: wrap;
+    justify-content: center;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./sale.module.css";
 
-const Sale = ({ image, title, price, discont_price, handleProductClick }) => {
+const Sale = ({ image, title, price, discont_price }) => {
   const discountPercentage = Math.round(
     ((price - discont_price) / price) * 100
   );
@@ -9,11 +9,7 @@ const Sale = ({ image, title, price, discont_price, handleProductClick }) => {
     <div>
       {" "}
       <div className={classes.product}>
-        <img
-          src={`http://127.0.0.1:3333${image}`}
-          alt={title}
-          onClick={handleProductClick}
-        />
+        <img src={`http://127.0.0.1:3333${image}`} alt={title} />
         <div className={classes.discountOverlay}>
           <div className={classes.discountText}>-{discountPercentage}% </div>
         </div>
